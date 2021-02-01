@@ -21,6 +21,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'preservim/nerdtree'
 
+" vim-gitgutter setting
+set updatetime=250
+
 call vundle#end()
 filetype plugin indent on
 
