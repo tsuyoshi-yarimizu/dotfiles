@@ -23,6 +23,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
+Plugin 'iamcco/markdown-preview.nvim'
 
 " vim-gitgutter setting
 set updatetime=250
@@ -45,4 +46,7 @@ set exrc
 
 " nerdtree
 let NERDTreeShowHidden=1
+
+" iamcco/markdown-preview
+source ~/.vimrc.markdown-preview
 
