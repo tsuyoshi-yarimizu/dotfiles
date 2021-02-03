@@ -43,3 +43,6 @@ source ~/.vimrc.lightline
 
 set exrc
 
+" nerdtree
+let NERDTreeShowHidden=1
+
