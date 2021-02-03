@@ -20,10 +20,26 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'preservim/nerdtree'
+Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 
 " vim-gitgutter setting
 set updatetime=250
 
 call vundle#end()
 filetype plugin indent on
+
+" lightline
+set laststatus=2
+
+if !exists('*fugitive#statusline')
+    set statusline=%F\ %m%r%h%w%y%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}[L%l/%L,C%03v]
+    set statusline+=%=
+    set statusline+=%{fugitive#statusline()}
+endif
+
+source ~/.vimrc.lightline
+
+set exrc
 
